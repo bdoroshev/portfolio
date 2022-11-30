@@ -12,21 +12,6 @@
 		@media (max-width: 992px) {
 			margin-bottom: 20px;
 		}
-		.pagination{
-			max-width: 300px;
-			left: 50%;
-			transform: translateX(-50%);
-			top: initial;
-			bottom: -3vh;
-			background: #000;
-			@media (max-width: 992px) {
-				bottom: -30px;
-			}
-			.pagination-progressbar-fill{
-				background: #fff;
-			}
-		}
-		
 	}
 	&__content{
 		height: 100%;
@@ -100,5 +85,21 @@
 				opacity: 1;
 			}
 		}
+	}
+}
+
+
+.pagination{
+	max-width: 300px !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	top: initial !important;
+	bottom: -3vh !important;
+	background: #000 !important;
+	@media (max-width: 992px) {
+		bottom: -30px !important;
+	}
+	span{
+		background: #fff !important;
 	}
 }

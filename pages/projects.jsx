@@ -1,10 +1,11 @@
 import Meta from '../utils/meta'
-import styles from '../styles/projects.module.scss'
 import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination } from "swiper";
 import 'swiper/css';
+import "swiper/css/pagination";
+import styles from '../styles/projects.module.scss'
 
 const projects = {
 	1: {
@@ -65,6 +66,8 @@ export default function Projects() {
 		</SwiperSlide>
 	)
 
+	const paginationItem = styles.pagination
+
   return (
     <>
 			<Meta title="Bogdan Doroshev - Shopify Expert / Custom Theme Developer Skills" description="kekW" />
@@ -72,11 +75,13 @@ export default function Projects() {
 				<div className="container">
 					<div className={styles.projects__content}>
 						<Swiper
+							style={{overflow: "initial", overflowX: "clip"}}
 							mousewheel={true}
 							autoHeight={true}
 							loop={true}
 							speed={600}
 							slidesPerView="auto"
+							spaceBetween={20}
 							breakpoints={{
 								992: {
 									slidesPerView: 2,
@@ -85,12 +90,12 @@ export default function Projects() {
 							}}
 							pagination={{
 								type: "progressbar",
-								el: ".pagination",
+								el: `.${paginationItem}`,
 							}}
 							modules={[Mousewheel, Pagination]}
 						>
 							{ listOfProjects }
-							<div className="pagination"></div>
+							<div className={paginationItem}></div>
 						</Swiper>
 					</div>
 				</div>
