@@ -53,7 +53,7 @@ export default function Projects() {
 
 	const listOfProjects = Object.keys(projects).map(( i ) =>
 		<SwiperSlide key={i}>
-			<a href={projects[i].url} target="_blank">
+			<a href={projects[i].url} target="_blank" rel="noreferrer">
 				<Image src={projects[i].image} width={450} height={500} priority={true} alt={projects[i].title} />
 				<div className={styles.slide__content}>
 					<h2>On project role: <b>{projects[i].role}</b></h2>

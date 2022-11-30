@@ -2,7 +2,7 @@ import styles from './button.module.scss'
 
 export default function Button() {
 	return (
-		<a href="https://www.upwork.com/freelancers/~01adae76a6fd6cd404" target="_blank" className={styles.button}>
+		<a href="https://www.upwork.com/freelancers/~01adae76a6fd6cd404" target="_blank" rel="noreferrer" className={styles.button}>
 			<div className={styles.container}>
 				<h4>LET’S TALK</h4>
 				<svg width="100%" viewBox="0 0 104 52" fill="none" xmlns="http://www.w3.org/2000/svg">

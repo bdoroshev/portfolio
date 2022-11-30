@@ -17,7 +17,7 @@ export default function Home() {
 								<h1><span>SHOPIFY</span> EXPERT</h1>
 								<h2>BOGDAN DOROSHEV</h2>
 							</div>
-							<p>I’m <a href="https://www.upwork.com/freelancers/~01adae76a6fd6cd404" target="_blank">TOP-Rated full-time Upwork freelancer</a> and passionate Front End / Shopify Developer since 2016. If you need a professional, modern, and responsive Shopify / HTML website – you are in the right place. I work fast and clearly, and I speak and write English fluently, so our communication will be smooth and clear.</p>
+							<p>I’m <a href="https://www.upwork.com/freelancers/~01adae76a6fd6cd404" target="_blank" rel="noreferrer">TOP-Rated full-time Upwork freelancer</a> and passionate Front End / Shopify Developer since 2016. If you need a professional, modern, and responsive Shopify / HTML website – you are in the right place. I work fast and clearly, and I speak and write English fluently, so our communication will be smooth and clear.</p>
 						</div>
 					</div>
 				</div>
