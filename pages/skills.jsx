@@ -1,7 +1,7 @@
 import Meta from '../utils/meta'
 import styles from '../styles/skills.module.scss'
 
-const skills: any = {
+const skills = {
 	tools: {
 		1: "Vs Code",
 		2: "Figma",

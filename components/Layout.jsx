@@ -2,7 +2,7 @@ import Header from './header/header'
 import Button from './button/button'
 
 
-export default function Layout({ children }: AppProps) {
+export default function Layout({ children }) {
 	return (
 		<>
 			<div className="wrapper">

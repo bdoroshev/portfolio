@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination } from "swiper";
 import 'swiper/css';
 
-const projects: any = {
+const projects = {
 	1: {
 		url: 'https://pawpantry.com.au/',
 		image: '/pawpantry.jpg',
