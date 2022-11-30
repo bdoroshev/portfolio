@@ -1,0 +1,30 @@
+.content__404{
+	height: 100%;
+	display: grid;
+	align-items: center;
+	min-height: 70vh;
+}
+
+.title__404{
+	text-align: center;
+	h1{
+		font-weight: 900;
+		font-size: 70px;
+		@media (max-width: 768px) {
+			font-size: 50px;
+		}
+		@media (max-width: 480px) {
+			font-size: 32px;
+		}
+		span{
+			color: transparent;
+			-webkit-text-stroke: 1px var(--text-color);
+		}
+	}
+	h2{
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+}

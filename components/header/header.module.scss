@@ -1,0 +1,35 @@
+.header{
+	font-family: 'Big Shoulders Display', cursive;
+	margin-top: 5vh;
+	border-top: 1px solid var(--text-color);
+	padding-top: 15px;
+	&__menu{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 3;
+		a{
+			color: var(--text-color);
+			font-size: 20px;
+			transition: .3s ease;
+			display: inline-block;
+			text-transform: uppercase;
+			position: relative;
+			font-size: 22px;
+			&:after {
+				display: block;
+				content: "";
+				height: 1px;
+				width: 0%;
+				background-color: var(--text-color);
+				transition: width .3s ease-in-out;
+				margin-top: -1px;
+			}
+			&.active, &:hover{
+				&:after{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
