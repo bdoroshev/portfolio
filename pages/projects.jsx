@@ -66,8 +66,6 @@ export default function Projects() {
 		</SwiperSlide>
 	)
 
-	const paginationItem = styles.pagination
-
   return (
     <>
 			<Meta title="Bogdan Doroshev - Shopify Expert / Custom Theme Developer Skills" description="kekW" />
@@ -90,12 +88,12 @@ export default function Projects() {
 							}}
 							pagination={{
 								type: "progressbar",
-								el: `.${paginationItem}`,
+								el: `.${styles.pagination}`,
 							}}
 							modules={[Mousewheel, Pagination]}
 						>
 							{ listOfProjects }
-							<div className={paginationItem}></div>
+							<div className={styles.pagination}></div>
 						</Swiper>
 					</div>
 				</div>
