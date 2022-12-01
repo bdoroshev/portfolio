@@ -2,64 +2,31 @@ import Meta from '../utils/meta'
 import styles from '../styles/skills.module.scss'
 
 const skills = {
-	tools: {
-		1: "Vs Code",
-		2: "Figma",
-		3: "Photoshop",
-		4: "Adobe XD",
-		5: "PM Tools"
-	},
-	hardSkills: {
-		1: {
-			title: "Html/Css"
-		},
-		2: {
-			title: "Javascript"
-		},
-		3: {
-			title: "Shopify Liquid"
-		},
-		4: {
-			title: "Shopify CLI"
-		},
-		5: {
-			title: "Git / Github"
-		},
-		6: {
-			title: "React.js"
-		},
-		7: {
-			title: "React Native",
-			progress: true
-		},
-		8: {
-			title: "Node.js",
-			progress: true
-		},
-		9: {
-			title: "TypeScript",
-			progress: true
-		},
-		10: {
-			title: "Shopify API integration"
-		},
-		11: {
-			title: "Custom eCommerce themes"
-		},
-		12: {
-			title: "Customize checkout process in Shopify Plus"
-		}
-	}
+	tools: [ "Vs Code", "Figma", "Photoshop", "Adobe XD", "PM Tools" ],
+	hardSkills: [
+		{ title: "Html/Css" },
+		{ title: "Javascript" },
+		{ title: "Shopify Liquid" },
+		{ title: "Shopify CLI" },
+		{ title: "Git / Github" },
+		{ title: "React.js" },
+		{ title: "React Native", progress: true },
+		{ title: "Node.js", progress: true },
+		{ title: "TypeScript", progress: true },
+		{ title: "Shopify API integration" },
+		{ title: "Custom eCommerce themes" },
+		{ title: "Customize checkout process in Shopify Plus" }
+	]
 }
 
 export default function Skills() {
 
-	const listOfSkills = Object.keys(skills.hardSkills).map(( i ) =>
-		<li key={i}><h3>{ skills.hardSkills[i].title } { skills.hardSkills[i].progress ? <p>(In progress)</p> : "" }</h3></li>
+	const listOfSkills = skills.hardSkills.map(( { title, progress }, i ) =>
+		<li key={i}><h3>{ title } { progress ? <p>(In progress)</p> : "" }</h3></li>
 	)
 
-	const listOfTools = Object.keys(skills.tools).map(( i ) =>
-		<li key={i}><h3>{ skills.tools[i] }</h3></li>
+	const listOfTools = skills.tools.map(( title, i ) =>
+		<li key={i}><h3>{ title }</h3></li>
 	)
 
   return (

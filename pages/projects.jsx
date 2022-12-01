@@ -2,13 +2,13 @@ import Meta from '../utils/meta'
 import Image from 'next/image'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, Pagination } from "swiper";
+import { Mousewheel, Pagination } from 'swiper';
 import 'swiper/css';
-import "swiper/css/pagination";
+import 'swiper/css/pagination';
 import styles from '../styles/projects.module.scss'
 
-const projects = {
-	1: {
+const projects = [
+	{
 		url: 'https://pawpantry.com.au/',
 		image: '/pawpantry.jpg',
 		title: 'Paw Pantry',
@@ -16,7 +16,7 @@ const projects = {
 		scope: 'Develop website from Figma design to custom Shopify theme',
 		role: 'Shopify Developer part of Vine Digital team'
 	},
-	2: {
+	{
 		url: 'https://simplyroastedcrisps.co.uk/',
 		image: '/simplyroasted.jpg',
 		title: 'Simply Roasted',
@@ -24,7 +24,7 @@ const projects = {
 		scope: 'Develop website from Figma design to custom Shopify theme',
 		role: 'hopify Developer part of Superco team'
 	},
-	3: {
+	{
 		url: 'https://vitalitycycles.com/',
 		image: '/vitalitycycles.jpg',
 		title: 'Vitality Cycles',
@@ -32,7 +32,7 @@ const projects = {
 		scope: 'Develop website from Figma design to custom Shopify theme',
 		role: 'Shopify Developer'
 	},
-	4: {
+	{
 		url: 'https://www.zendxb.com/',
 		image: '/zendxb.jpg',
 		title: 'Zendxb',
@@ -40,27 +40,26 @@ const projects = {
 		scope: 'Design website in Figma and develop on Shopify',
 		role: 'Designer and Shopify Developer'
 	},
-	5: {
+	{
 		url: 'https://thesimpleroot.co.uk/',
 		image: '/thesimpleroot.jpg',
 		title: 'The Simple Root',
     description: 'Everything we do starts with simple root veg. In fact, its our #1 ingredient. We take British grown potatoes, parsnips & sweet potatoes, and with a little thought and care, turn them into the creamiest sauces, dips and cheeses - no dairy needed.',
 		scope: 'Develop website from Figma design to custom Shopify theme',
 		role: 'Shopify Developer part of Superco team'
-	},
-}
+	}
+]
 
 export default function Projects() {
-
-	const listOfProjects = Object.keys(projects).map(( i ) =>
+	const listOfProjects = projects.map(( { url, image, title, role, scope, description }, i ) =>
 		<SwiperSlide key={i}>
-			<a href={projects[i].url} target="_blank" rel="noreferrer">
-				<Image src={projects[i].image} width={450} height={500} priority={true} alt={projects[i].title} />
+			<a href={url} target="_blank" rel="noreferrer">
+				<Image src={image} width={450} height={500} priority={true} alt={title} />
 				<div className={styles.slide__content}>
-					<h2>On project role: <b>{projects[i].role}</b></h2>
-					<h2>Scope of work: <b>{projects[i].scope}</b></h2>
-					<h1>{projects[i].title}</h1>
-					<p>{projects[i].description}</p>
+					<h2>On project role: <b>{role}</b></h2>
+					<h2>Scope of work: <b>{scope}</b></h2>
+					<h1>{title}</h1>
+					<p>{description}</p>
 				</div>
 			</a>
 		</SwiperSlide>
@@ -73,7 +72,6 @@ export default function Projects() {
 				<div className="container">
 					<div className={styles.projects__content}>
 						<Swiper
-							style={{overflow: "initial", overflowX: "clip"}}
 							mousewheel={true}
 							autoHeight={true}
 							loop={true}
