@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import { IMeta } from '../models'
 
-export default function Meta({title, description}) {
+export default function Meta({title, description}: IMeta) {
 	return (
 		<Head>
 			<title>{title}</title>

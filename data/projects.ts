@@ -1,13 +1,6 @@
-import Meta from '../utils/meta'
-import Image from 'next/image'
+import { IProject } from '../models'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import styles from '../styles/projects.module.scss'
-
-const projects = [
+export const projects: IProject[] = [
 	{
 		url: 'https://pawpantry.com.au/',
 		image: '/pawpantry.jpg',
@@ -49,53 +42,3 @@ const projects = [
 		role: 'Shopify Developer part of Superco team'
 	}
 ]
-
-export default function Projects() {
-	const listOfProjects = projects.map(( { url, image, title, role, scope, description }, i ) =>
-		<SwiperSlide key={i}>
-			<a href={url} target="_blank" rel="noreferrer">
-				<Image src={image} width={450} height={500} priority={true} alt={title} />
-				<div className={styles.slide__content}>
-					<h2>On project role: <b>{role}</b></h2>
-					<h2>Scope of work: <b>{scope}</b></h2>
-					<h1>{title}</h1>
-					<p>{description}</p>
-				</div>
-			</a>
-		</SwiperSlide>
-	)
-
-  return (
-    <>
-			<Meta title="Bogdan Doroshev - Shopify Expert / Custom Theme Developer Skills" description="kekW" />
-			<section className={styles.projects}>
-				<div className="container">
-					<div className={styles.projects__content}>
-						<Swiper
-							mousewheel={true}
-							autoHeight={true}
-							loop={true}
-							speed={600}
-							slidesPerView="auto"
-							spaceBetween={20}
-							breakpoints={{
-								992: {
-									slidesPerView: 2,
-									spaceBetween: 60,
-								},
-							}}
-							pagination={{
-								type: "progressbar",
-								el: `.${styles.pagination}`,
-							}}
-							modules={[Mousewheel, Pagination]}
-						>
-							{ listOfProjects }
-							<div className={styles.pagination}></div>
-						</Swiper>
-					</div>
-				</div>
-			</section>
-    </>
-  )
-}

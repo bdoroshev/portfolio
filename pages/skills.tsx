@@ -1,31 +1,16 @@
 import Meta from '../utils/meta'
 import styles from '../styles/skills.module.scss'
 
-const skills = {
-	tools: [ "Vs Code", "Figma", "Photoshop", "Adobe XD", "PM Tools" ],
-	hardSkills: [
-		{ title: "Html/Css" },
-		{ title: "Javascript" },
-		{ title: "Shopify Liquid" },
-		{ title: "Shopify CLI" },
-		{ title: "Git / Github" },
-		{ title: "React.js" },
-		{ title: "React Native", progress: true },
-		{ title: "Node.js", progress: true },
-		{ title: "TypeScript", progress: true },
-		{ title: "Shopify API integration" },
-		{ title: "Custom eCommerce themes" },
-		{ title: "Customize checkout process in Shopify Plus" }
-	]
-}
+import { skills } from '../data/skills'
+import { IHardSkills } from '../models'
 
 export default function Skills() {
 
-	const listOfSkills = skills.hardSkills.map(( { title, progress }, i ) =>
+	const listOfSkills = skills.hardSkills.map(( { title, progress }: IHardSkills, i:number ) =>
 		<li key={i}><h3>{ title } { progress ? <p>(In progress)</p> : "" }</h3></li>
 	)
 
-	const listOfTools = skills.tools.map(( title, i ) =>
+	const listOfTools = skills.tools.map(( title: string, i:number ) =>
 		<li key={i}><h3>{ title }</h3></li>
 	)
 

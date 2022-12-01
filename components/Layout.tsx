@@ -1,8 +1,7 @@
 import Header from './header/header'
 import Button from './button/button'
 
-
-export default function Layout({ children }) {
+export default function Layout({ children }: any) {
 	return (
 		<>
 			<div className="wrapper">
