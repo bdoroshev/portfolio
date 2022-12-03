@@ -20,5 +20,5 @@ export interface IHardSkills {
 
 export interface ISkills {
 	tools: Array<string>
-	hardSkills: Array<hardSkills>
+	hardSkills: Array<IHardSkills>
 }

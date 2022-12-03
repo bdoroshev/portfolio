@@ -15,7 +15,7 @@ export const projects: IProject[] = [
 		title: 'Simply Roasted',
     description: 'Simply Roasted here to change the crisps we eat, for the better, forever. that’s a big claim, but we believe we’ve found a better way to make crisps, with everything you want (taste, crunch, satisfaction) and less of what you don’t want (calories, fat, salt).',
 		scope: 'Develop website from Figma design to custom Shopify theme',
-		role: 'hopify Developer part of Superco team'
+		role: 'Shopify Developer part of Superco team'
 	},
 	{
 		url: 'https://vitalitycycles.com/',
