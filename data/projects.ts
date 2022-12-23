@@ -26,20 +26,12 @@ export const projects: IProject[] = [
 		role: 'Senior Shopify Developer part of Superco team'
 	},
 	{
-		url: 'https://vitalitycycles.com/',
-		image: '/vitalitycycles.jpg',
-		title: 'Vitality Cycles',
-    description: 'Custom formulated by Dr Jennifer Daniels, Vitality Capsules are infused with natural ingredients such as garlic, ginger, and aloe, our vitality capsules are vital to maintaining a healthy and active life.',
-		scope: 'Develop website from Figma design to custom Shopify theme',
-		role: 'Senior Shopify Developer'
-	},
-	{
-		url: 'https://www.zendxb.com/',
-		image: '/zendxb.jpg',
-		title: 'Zendxb',
-    description: 'Dubai’s first home delivered STI test and treatment service. Courier delivery and pickup service. State of the art molecular laboratory testing. Results delivered to your mobile in under 3 hours with VIP processing.',
-		scope: 'Design website in Figma and develop custom Shopify theme',
-		role: 'Designer and Senior Shopify Developer'
+		url: 'https://gaintrainapp.com/',
+		image: '/gain-train.jpg',
+		title: 'GAINTRAIN',
+    description: 'Gaintrain is a meal planner designed to help bodybuilders like you achieve their goals.',
+		scope: 'Develop website from Figma design to React SEO friendly page',
+		role: 'React Developer'
 	},
 	{
 		url: 'https://thesimpleroot.co.uk/',
