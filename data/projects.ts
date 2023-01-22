@@ -26,6 +26,22 @@ export const projects: IProject[] = [
 		role: 'Senior Shopify Developer part of Superco team'
 	},
 	{
+		url: 'https://la-roche-posay.doroshev.co/',
+		image: '/la-roche-posay.jpg',
+		title: 'La Roche Posay',
+    description: 'LA ROCHE-POSAY IS THE number 1 DERMOCOSMETIC BRAND WORLDWIDE, RECOMMENDED BY 90,000 dermatologists. DRIVEN BY OUR VALUES OF courage, commitment and love, WE PARTNER WITH DERMATOLOGISTS AND EXPERTS TO DESIGN innovative skincare SOLUTIONS FOR THE MOST FRAGILE SKIN AND BE useful to people.',
+		scope: 'Develop website from Figma design to custom Hydrogen App',
+		role: 'Hydrogen Developer'
+	},
+	{
+		url: 'https://gpm.doroshev.co/',
+		image: '/gpm.jpg',
+		title: 'GPM',
+    description: 'Stop missing opportunities with your business cards. Empower your team to confidently share actionable insights and collect leads with a digital business card with Real-time Analytics in Fully-Branded ecosystem.',
+		scope: 'Develop website from Figma design to React SEO friendly app',
+		role: 'React Developer'
+	},
+	{
 		url: 'https://gaintrainapp.com/',
 		image: '/gain-train.jpg',
 		title: 'GAINTRAIN',
