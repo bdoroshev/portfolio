@@ -26,10 +26,10 @@ export const projects: IProject[] = [
 		role: 'Senior Shopify Developer part of Superco team'
 	},
 	{
-		url: 'https://la-roche-posay.doroshev.co/',
-		image: '/la-roche-posay.jpg',
-		title: 'La Roche Posay',
-    description: 'LA ROCHE-POSAY IS THE number 1 DERMOCOSMETIC BRAND WORLDWIDE, RECOMMENDED BY 90,000 dermatologists. DRIVEN BY OUR VALUES OF courage, commitment and love, WE PARTNER WITH DERMATOLOGISTS AND EXPERTS TO DESIGN innovative skincare SOLUTIONS FOR THE MOST FRAGILE SKIN AND BE useful to people.',
+		url: 'https://juniperсare.doroshev.co/',
+		image: '/junipercare.jpg',
+		title: 'JuniperCare',
+    description: 'JuniperCare IS THE number 1 DERMOCOSMETIC BRAND WORLDWIDE, RECOMMENDED BY 90,000 dermatologists. DRIVEN BY OUR VALUES OF courage, commitment and love, WE PARTNER WITH DERMATOLOGISTS AND EXPERTS TO DESIGN innovative skincare SOLUTIONS FOR THE MOST FRAGILE SKIN AND BE useful to people.',
 		scope: 'Develop website from Figma design to custom Hydrogen App',
 		role: 'Hydrogen Developer'
 	},
