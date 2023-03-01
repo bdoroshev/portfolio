@@ -26,7 +26,7 @@ export const projects: IProject[] = [
 		role: 'Senior Shopify Developer part of Superco team'
 	},
 	{
-		url: 'https://juniperсare.doroshev.co/',
+		url: 'https://junipercare.doroshev.co/',
 		image: '/junipercare.jpg',
 		title: 'JuniperCare',
     description: 'JuniperCare IS THE number 1 DERMOCOSMETIC BRAND WORLDWIDE, RECOMMENDED BY 90,000 dermatologists. DRIVEN BY OUR VALUES OF courage, commitment and love, WE PARTNER WITH DERMATOLOGISTS AND EXPERTS TO DESIGN innovative skincare SOLUTIONS FOR THE MOST FRAGILE SKIN AND BE useful to people.',
