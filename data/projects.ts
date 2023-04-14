@@ -41,6 +41,22 @@ export const projects: IProject[] = [
 		scope: 'Develop website from Figma design to React SEO friendly app',
 		role: 'React Developer'
 	},
+	// {
+	// 	url: 'https://milavitsa.doroshev.co/',
+	// 	image: '/milavitsa.jpg',
+	// 	title: 'Milavitsa',
+  //   description: 'For almost 50 years, MILAVITSA has been creating lingerie, being one of the largest manufacturers of corsetry in Eastern Europe. The companys products are successfully sold in more than 25 countries around the world and are characterized by high quality, original design and thoughtful design solutions.',
+	// 	scope: 'Develop website from Figma design to custom Hydrogen App',
+	// 	role: 'Hydrogen Developer'
+	// },
+	{
+		url: 'https://crispyfantasy.com/',
+		image: '/crispy-fantasy.jpg',
+		title: 'Crispy Fantasy',
+    description: "What do you get when you throw together an ex-banker and a food enthusiast? A cereal that isn't just for gym bros or instagram influencers, it's for everyone.",
+		scope: 'Develop website from Figma design to custom Shopify theme',
+		role: 'Senior Shopify Developer'
+	},
 	{
 		url: 'https://gaintrainapp.com/',
 		image: '/gain-train.jpg',
@@ -49,12 +65,4 @@ export const projects: IProject[] = [
 		scope: 'Develop website from Figma design to React SEO friendly page',
 		role: 'React Developer'
 	},
-	{
-		url: 'https://thesimpleroot.co.uk/',
-		image: '/thesimpleroot.jpg',
-		title: 'The Simple Root',
-    description: 'Everything we do starts with simple root veg. In fact, its our #1 ingredient. We take British grown potatoes, parsnips & sweet potatoes, and with a little thought and care, turn them into the creamiest sauces, dips and cheeses - no dairy needed.',
-		scope: 'Develop website from Figma design to custom Shopify theme',
-		role: 'Senior Shopify Developer part of Superco team'
-	}
 ]
